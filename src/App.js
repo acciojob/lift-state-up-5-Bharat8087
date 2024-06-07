@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
 
@@ -10,7 +11,8 @@ const App = () => {
 
   return (
     <div>
-      <h1>{isLoggedIn ? "Welcome Back!" : "Please Log In"}</h1>
+      <h1>Parent Component</h1>
+      <h2>{isLoggedIn ? "Welcome, User!" : "Please Log In"}</h2>
       <LoginForm isLoggedIn={isLoggedIn} onLogin={handleLogin} />
     </div>
   );
