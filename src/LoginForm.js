@@ -1,3 +1,4 @@
+// src/LoginForm.js
 
 import React, { useState } from 'react';
 
@@ -7,7 +8,6 @@ const LoginForm = ({ isLoggedIn, onLogin }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
     if (username && password) {
       onLogin();
     }
